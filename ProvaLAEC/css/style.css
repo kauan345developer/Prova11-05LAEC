@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+:root{
+    --primary-color:#272741;
+    --second-color:#f5f8fc;
+    --third-color:#f7c073;
+    --fourth-color:#e2e4ea;
+    --input-color:rgba(158, 158, 158, 0.836);
+}
+
+.container {
+width: 90vw;
+height: 100vh;
+background-color: var(--fourth-color);
+margin: 0 auto;
+display: grid;
+grid-template-columns: 25rem 63rem 29rem;
+gap: 2rem;
+}
+
+
+.esq{
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.esq> div:nth-child(1){
+    padding:1rem 0 0 0rem ;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.esq> div:nth-child(1) div{
+    color: var(--second-color);
+    margin-left: 2rem;
+    border-radius: .4rem;
+}
+
+.esq> div:nth-child(1) div:nth-child(7) i{
+    color: orangered;
+}
+
+.esq> div div{
+    font-size: 1.6rem;
+}
+
+.esq> div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.esq> div:nth-child(2) div{
+    margin-left:2rem ;
+    color: var(--second-color);
+}
+
+.esq> div:nth-child(1) div:hover{
+    background-color: #38385c;
+}
+
+.esq> div:nth-child(2) div:hover{
+    background-color: #38385c;
+}
+
+.container .mid{
+    display: grid;
+    grid-template-rows: 38rem auto;
+    gap: 1rem;
+}
+
+
+
+.container .mid .mid-top{
+    padding-top: 1rem;
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-left: 3rem;
+}
+
+.container .mid .mid-top input{
+    width: 27.5rem;
+    height: 4.5rem;
+    border-radius: .5rem;
+    outline: none;
+    border: 1px solid var(--input-color);
+}
+
+.container .mid .mid-top select{
+    width: 27.5rem;
+    height: 4.5rem;
+    border-radius: .5rem;
+    outline: none;
+    border: 1px solid var(--input-color);
+}
+
+.container .mid .mid-top p{
+    font-weight: 600;
+}
+
+.container .mid .mid-top .mid-top-left .dates{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-size: 1.8rem;
+    padding-top: 1rem;
+}
+
+.container .mid .mid-top .mid-top-right{
+    margin-top: 4rem;
+    display: flex;
+    font-size: 1.8rem;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.container .mid .mid-bottom{
+    display: grid;
+    grid-template-rows:5rem 7rem 7rem auto ;
+    margin-bottom: 1rem;
+}
+
+.container .mid .mid-bottom>div{
+    color: var(--primary-color);
+    padding-left: 3rem;
+}
+
+.container .mid .mid-bottom>div:nth-child(1){
+    display: flex;
+    align-items: center;
+}
+
+.container .mid .mid-bottom>div:nth-child(2) {
+    display: flex;
+    gap: 1rem;
+}
+
+.container .mid .mid-bottom>div:nth-child(2) div:nth-child(1) input{
+    width: 45rem;
+    height: 3rem;
+    border-radius: .5rem;
+    outline: none;
+    border: 1px solid var(--input-color);
+}
+
+.container .mid .mid-bottom p{
+    font-weight: 600;
+}
+
+.container .mid .mid-bottom input{
+    border-radius: .5rem;
+    outline: none;
+    border: 1px solid var(--input-color);
+}
+
+.container .mid .mid-bottom>div:nth-child(2) div:nth-child(2) input{
+    height: 3rem;
+    width: 10rem;
+    outline: none;
+}
+
+.container .mid .mid-bottom>div:nth-child(3){
+    display: flex;
+    gap: 1rem;
+}
+
+.container .mid .mid-bottom>div:nth-child(3) div input{
+    width: 15rem;
+    height: 3rem;
+    outline: none;
+}
+
+.container .mid .mid-bottom>div:nth-child(4){
+    display: flex;
+    align-items: center;
+}
+
+.container .mid .mid-bottom>div:nth-child(4) button{
+    width: 7rem;
+    height: 4rem;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: .5rem;
+    color: white;
+}
+
+.container .dir{
+    display: grid;
+    grid-template-rows: 45rem 16rem;
+    gap: 3rem;
+    position: relative;
+}
+
+
+
+.container .dir div:nth-child(1){
+    background-color: var(--second-color);
+}
+
+.container .dir div:nth-child(1) .bg-image{
+    height: 20rem;
+    background-image: url(img/clouds-provajpg.jpg);
+}
+
+.container .dir div:nth-child(1) .person{
+    background-color: #38385c;
+    width: 14rem;
+    height: 14rem;
+    position: absolute;
+    top: 10rem;
+    left: 8rem;
+    border-radius: 50%;
+}
+
+.container .dir .dados{
+    margin-top: 5rem;
+    height: 16rem;
+    width: 28.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+.container .dir .dados p:nth-child(1){
+    font-weight: bold;
+    font-size: 2.1rem;
+}
+
+.container .dir .dados p:nth-child(3){
+    font-weight: 200;
+}
+
+.container .dir .buttons{
+    margin-top: 3rem;
+    height: 9rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.container .dir .buttons button{
+    width: 11rem;
+    height: 4rem;
+    border: none;
+    border-radius: .5rem;
+}
+
+.container .dir .buttons button:nth-child(1){
+    color: var(--second-color);
+    background-color: var(--primary-color);
+    font-size: 1.4rem;
+}
+
+.container .dir .buttons button:nth-child(2){
+    background-color: var(--third-color);
+    font-weight: bold;
+}
+
+.container .dir  .bottom-esq{
+    border-radius: .5rem;
+}
+
+.container .dir  .bottom-esq .title-esq{
+    display: flex;
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
+.container .dir   .dados2{
+    height: 12rem;
+    background-color: var(--second-color);
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    gap: 3rem;
+}
+
+.container .dir   .dados2 .img-dados2{
+    width: 6rem;
+    height: 6rem;
+    background-color: var(--primary-color);
+}
+
+.container .dir .dados2 .types2{
+    display: flex;
+}
+
+.container .dir .dados2 .types2 .clipe{
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.container .dir .dados2 .types2 .ps{
+    font-size: 1.2rem;
+}
+
+.container .dir .dados2 .types2 .ps{
+    padding-left: 1rem;
+}
+
+.container .dir .dados2 .types2 .ps p:nth-child(1){
+    font-weight: 500;
+}
+
+.dir div:nth-child(1){
+    border-radius: .5rem;
+}
