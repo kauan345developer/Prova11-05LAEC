@@ -86,6 +86,7 @@ gap: 2rem;
     display: grid;
     grid-template-rows: 38rem auto;
     gap: 1rem;
+    background-color: var(--second-color);
 }
 
 
